@@ -33,5 +33,26 @@ function sayHello(string) {
 }
 
 
+let person = ['Charles', 'Abbey', 'James', 'John'];
 
+let Charles = {name: 'Charles', age: 21};
+let Abbey = {name: 'Abbey', age: 27};
+let James = {name: 'James', age: 18};
+let John = {name: 'John', age: 17};
 
+for (let i = 0; i <  person.length; i++) {
+    checkAge(person[i].name, person[i].age);
+};
+
+checkAge('Charles', 21);
+checkAge('Abbey', 27);
+checkAge('James', 18);
+checkAge('John', 17);
+
+function checkAge(name, age) {
+    if (age < 21) {
+    console.log("Sorry "+ name +", you aren't old enough to view this page!");
+} else {
+    console.log(""+ name + "," , "You may view this page");
+}
+}
