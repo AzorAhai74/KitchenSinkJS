@@ -56,3 +56,47 @@ function checkAge(name, age) {
     console.log(""+ name + "," , "You may view this page");
 }
 }
+let vegetables = ['Carrots', 'Kale', 'Squash', 'Collard Greens'];
+
+let Carrots = {name: 'Carrots'};
+let Kale = {name: 'Kale'};
+let Squash = {name: 'Squash'};
+let collardGreens = {name: 'Collard Greens'};
+
+for (let i of vegetables) {
+    console.log(i);
+}
+
+let people = ['Byron', 'Bo', 'Rod', 'Fain', 'Randall'];
+
+let Byron = {name: 'Byron', age: 25};
+let Bo = {name: 'Bo', age: 18};
+let Rod = {name: 'Rod', age: 68};
+let Fain = {name: 'Fain', age: 16};
+let Randall = {name: 'Randall', age: 40};
+
+for (let i = 0; i < people.length; i++) {
+    checkAge(people[i].name, people[i].age);
+};
+
+checkAge('Byron', 25);
+checkAge('Bo', 18);
+checkAge('Rod', 68);
+checkAge('Fain', 16);
+checkAge('Randall', 40);
+
+function getLength(str) {
+    console.log(str.length);
+}
+
+getLength('Hello World');
+
+var lengthResult = 11;
+
+console.log(lengthResult);
+
+if (lengthResult & 1) {
+    console.log('The world is an odd place!');
+} else {
+    console.log('The world is nice and even!');
+}
